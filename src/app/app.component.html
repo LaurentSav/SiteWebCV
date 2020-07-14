@@ -1,1 +1,31 @@
-<h1>{{title}}</h1>
+<header>
+    <div class="Head-Container">
+        <h1 class = "Titre">Laurent Savivanh</h1>
+        <h4 class = "Titre2">Etudiant en Ingénierie Informatique</h4>
+        <nav>
+            <ul>
+                <li ><a href="#" routerLink="/" id="Home" class="underline" >Home</a></li>
+                <li ><a href="#" routherLink="/" id="Projet" class="underline">Projet</a></li>
+                <li ><a href="#" routerLink="/Contact" id="Contact" class="underline">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+<div class = "BottomLigne"> </div>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<br>
+
+<footer>
+    <div class="BottomLigne"></div>
+    <br>
+    <div class="text-center">
+        <p>Angular 10</p>
+    </div>
+    <br>
+</footer>

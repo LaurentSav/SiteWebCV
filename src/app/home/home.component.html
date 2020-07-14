@@ -1,0 +1,116 @@
+
+<div class="wrap">
+    <!-- Présentation Photo -->
+    <div class="row">
+        <div class="col-md-3">
+            <img class="smaller-image black-border" src="\assets\Image\Photo.jpeg" alt="Photo de Profile">
+            <div class="row" id="cv">
+                <button class="marge-top btn btn-outline-primary center-block nodeco">Télécharger CV</button>
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            <h1 class="Helvt">BONJOUR</h1>
+            <h4>Je suis actuellement a la recherche d'un stage de 6 mois (PFE)</h4>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Experience -->
+    
+    <div id="Experience">
+        <div class="row marge-left">
+            <h1 class="Helvt">EXPERIENCES</h1>
+        </div>
+        <div class="BottomBlueLigne marge-left marge-bot"></div>
+        <div class="row marge-left">
+            <h3 class="grey font-weight-bold">Landis+Gyr – Ingénieur Logiciel Stagiaire</h3>
+            <h4>Mascot, Australie - 01 juillet 2019 à 25 aout 2019 </h4>
+            <div class="marge-left marge-bot">
+                <p>Stage en ingénierie software dans lequel plusieurs tâches m'ont été confiés pour assurer la qualité des produits commercialisés par l'entreprise.</p>
+                <!-- 
+                <div class="cont" [class.show]="show">
+                    <p>Mission ou tâches réalisées : <br>
+                        ->Correction de plusieurs bugs dans un programme de contrôle de qualité (C#). <br>
+                        ->Amélioration d’une application d’alerte (Visual Basic). <br>
+                        ->Création d’une application pour faciliter l’interaction entre l’utilisateur et le serveur SQL de l’entreprise (C# et MSQL). <br>
+                    </p>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn nodeco font-weight-bold" (click)="show = !show">{{ show ? 
+                        'Montrer moins': 'Montrer plus' }}</button>
+                </div> 
+                -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Formation -->
+    <div id="Formation" class="RowInfo">
+        <div class="row marge-left">
+            <h1 class="Helvt">FORMATION</h1>
+        </div>
+        <div class="BottomBlueLigne marge-left marge-bot"></div>
+        <br>
+
+        
+
+
+        <div class="row marge-left align-items-center">
+            <div class="col-md-1 ">
+                <button class="btn nodeco size " onclick="plusSlides(-1)" ><fa-icon [icon]="faAngleLeft" class="h1 text-secondary" ></fa-icon></button>
+            </div>
+            <div class="col-md-10">
+                <h3 class="grey font-weight-bold">UQAC - Double Diplôme en Matrise Informatique (Professionnel)</h3>
+                <h4>Chicoutimi, Canada - 2020 à 2021 </h4>
+                <div class="marge-left marge-bot">
+                    <p>Formation visant à développer chez l’étudiant
+                        des compétences avancées dans des secteurs de pointe de 
+                        l’informatique. En plus de permettre l’acquisition de connaissances de haut niveau, le programme de maîtrise cherche à développer chez ce dernier ses capacités d’analyse et de synthèse.</p>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button class="btn nodeco size" onclick="plusSlides(1)"><fa-icon [icon]="faAngleRight" class="h1 text-secondary " ></fa-icon></button>
+            </div>
+            
+
+        </div>
+
+
+                <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides bg-blue">
+                TG1
+            </div>
+        
+            <div class="mySlides bg-primary">
+                TG2
+            </div>
+        
+            <div class="mySlides  bg-danger">
+                TG3
+            </div>
+
+            
+    
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot " onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> 
+
+    </div>
+
+
+
+
+        
+</div>
