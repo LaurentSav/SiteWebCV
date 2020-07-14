@@ -5,13 +5,16 @@
         <div class="col-md-3">
             <img class="smaller-image black-border" src="\assets\Image\Photo.jpeg" alt="Photo de Profile">
             <div class="row" id="cv">
-                <button class="marge-top btn btn-outline-primary center-block nodeco">Télécharger CV</button>
+                <a download="CV.pdf" target="_blank" href ="/assets/CV.pdf" ><button class="marge-top btn btn-outline-primary center-block nodeco">Télécharger CV</button></a>
             </div>
 
         </div>
-        <div class="col-md-9">
-            <h1 class="Helvt">BONJOUR</h1>
-            <h4>Je suis actuellement a la recherche d'un stage de 6 mois (PFE)</h4>
+        <div class="col-md-8">
+            <h1 class="Helvt">BONJOUR,</h1>
+            <h4>Je suis un éléve ingénieur en informatique, actuellement au Canada pour
+                obtenir un double diplôme en maîtrise informatique.<br>
+                Je suis a la recherche d'un stage de fin d'étude en informatique d'une durée de 6 mois (PFE) pour juin 2021.
+            </h4>
         </div>
     </div>
 
@@ -22,93 +25,205 @@
     
     <div id="Experience">
         <div class="row marge-left">
-            <h1 class="Helvt">EXPERIENCES</h1>
+            <h1 class="Helvt">EXPÉRIENCES</h1>
         </div>
         <div class="BottomBlueLigne marge-left marge-bot"></div>
-        <div class="row marge-left">
-            <h3 class="grey font-weight-bold">Landis+Gyr – Ingénieur Logiciel Stagiaire</h3>
-            <h4>Mascot, Australie - 01 juillet 2019 à 25 aout 2019 </h4>
-            <div class="marge-left marge-bot">
-                <p>Stage en ingénierie software dans lequel plusieurs tâches m'ont été confiés pour assurer la qualité des produits commercialisés par l'entreprise.</p>
-                <!-- 
-                <div class="cont" [class.show]="show">
-                    <p>Mission ou tâches réalisées : <br>
-                        ->Correction de plusieurs bugs dans un programme de contrôle de qualité (C#). <br>
-                        ->Amélioration d’une application d’alerte (Visual Basic). <br>
-                        ->Création d’une application pour faciliter l’interaction entre l’utilisateur et le serveur SQL de l’entreprise (C# et MSQL). <br>
-                    </p>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn nodeco font-weight-bold" (click)="show = !show">{{ show ? 
-                        'Montrer moins': 'Montrer plus' }}</button>
-                </div> 
-                -->
+        <div class="row height50 marge-left align-items-center">
+            <div class="col-md-1 ">
+                
+            </div>
+            <div class="col-md-10">
+                <carousel [interval]= 0 class="FCarousel">
+                    <slide>
+                        <div >
+                            <h3 class="grey font-weight-bold">Landis+Gyr – Ingénieur Logiciel Stagiaire</h3>
+                            <h4>Mascot, Australie - 01 juillet 2019 à 25 aout 2019 </h4>
+                            <div class="marge-left marge-bot">
+                                <p>Stage en ingénierie software dans lequel plusieurs tâches m'ont été confiés pour assurer la qualité des produits commercialisés par l'entreprise.</p>
+                            </div>
+                        </div>
+                        
+                    </slide>
+                    <slide>
+                        <h3 class="grey font-weight-bold">UNICEF - Bénévole</h3>
+                            <h4>Calais, France - 2018 à 2019</h4>
+                            <div class="marge-left marge-bot">
+                                <p>Collecte de Fond, Sensibilisation auprès des enfants...</p>
+                            </div>
+                    </slide>
+        
+                </carousel>
+                
+            </div>
+            <div class="col-md-1">
+                
             </div>
         </div>
     </div>
 
+    <br>
+
     <!-- Formation -->
-    <div id="Formation" class="RowInfo">
+    <div id="Formation">
         <div class="row marge-left">
             <h1 class="Helvt">FORMATION</h1>
         </div>
         <div class="BottomBlueLigne marge-left marge-bot"></div>
-        <br>
-
-        
 
 
-        <div class="row marge-left align-items-center">
+
+        <div class="row marge-left height50 align-items-center">
             <div class="col-md-1 ">
-                <button class="btn nodeco size " onclick="plusSlides(-1)" ><fa-icon [icon]="faAngleLeft" class="h1 text-secondary" ></fa-icon></button>
+                
             </div>
             <div class="col-md-10">
-                <h3 class="grey font-weight-bold">UQAC - Double Diplôme en Matrise Informatique (Professionnel)</h3>
-                <h4>Chicoutimi, Canada - 2020 à 2021 </h4>
-                <div class="marge-left marge-bot">
-                    <p>Formation visant à développer chez l’étudiant
-                        des compétences avancées dans des secteurs de pointe de 
-                        l’informatique. En plus de permettre l’acquisition de connaissances de haut niveau, le programme de maîtrise cherche à développer chez ce dernier ses capacités d’analyse et de synthèse.</p>
-                </div>
+                <carousel [interval]= 0 class="FCarousel">
+                    <slide>
+                        <div >
+                            <h3 class="grey font-weight-bold">UQAC - Double Diplôme en Matrise Informatique (Professionnel)</h3>
+                            <h4>Chicoutimi, Canada - 2020 à 2021 </h4>
+                            <div class="marge-left marge-bot">
+                                <p>Formation visant à développer chez l’étudiant
+                                    des compétences avancées dans des secteurs de pointe de 
+                                    l’informatique. En plus de permettre l’acquisition de connaissances de haut niveau, le programme de maîtrise cherche à développer chez ce dernier ses capacités d’analyse et de synthèse.</p>
+                            </div>
+                        </div>
+                        
+                    </slide>
+                    <slide>
+                        <h3 class="grey font-weight-bold">EILCO - Diplôme d'Ingénieur Généralistes en Informatique </h3>
+                            <h4>Calais, France - 2018 à 2021 </h4>
+                            <div class="marge-left marge-bot">
+                                <p>L’objectif de la spécialité « Informatique » 
+                                    est de former des ingénieurs ayant des compétences 
+                                    en matière de développement, de déploiement et d’audit 
+                                    de systèmes informatiques sur des environnements alliant répartition et mobilité.</p>
+                            </div>
+                    </slide>
+                    <slide>
+                        <h3 class="grey font-weight-bold">Classe Préparatoire aux Grandes Écoles</h3>
+                            <h4>Meaux, France - 2016-2018</h4>
+                            <div class="marge-left marge-bot">
+                                <p>Formation préparant l'étudiant aux concours d'entrée et aux admissions sur titre de nombreuses école d'ingénieurs</p>
+                            </div>
+                    </slide>
+                </carousel>
+                
             </div>
             <div class="col-md-1">
-                <button class="btn nodeco size" onclick="plusSlides(1)"><fa-icon [icon]="faAngleRight" class="h1 text-secondary " ></fa-icon></button>
+                
             </div>
             
 
         </div>
 
 
-                <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides bg-blue">
-                TG1
-            </div>
-        
-            <div class="mySlides bg-primary">
-                TG2
-            </div>
-        
-            <div class="mySlides  bg-danger">
-                TG3
-            </div>
-
-            
+    </div>
     
+    <br>
+    <!-- Formation -->
+    <div id="TECHNIQUES">
+        <div class="row marge-left">
+            <h1 class="Helvt">COMPÉTENCES TECHNIQUES</h1>
         </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot " onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div> 
+        <div class="BottomBlueLigne marge-left marge-bot"></div>
+
+        <div class="row marge-left">
+            <div class="col-md-1"> </div>
+            <div class="col-md-5">
+                <h3 class = "font-weight-bold">Développement web</h3>
+
+                <ul>
+                    <li>
+                        Langages:
+                        <ul>
+                            <li>HTML (Avancée)</li>
+                            <li>CSS (Avancée)</li>
+                            <li>JAVASCRIPT (Débutant-Intermédiaire)</li>
+                            
+                        </ul>
+                            
+                    
+                    </li>
+                    <li>Front-End Framework:
+                        <ul>
+                            <li>Angular</li>
+                            <li>Ruby on Rails</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <h3 class = "font-weight-bold">Programmation</h3>
+                <ul>
+                    <li>JAVA (Avancée) </li>
+                    <li>C# (Avancée)</li>
+                    <li>C (Intermédiaire)</li>
+                    <li>Python (Intermédiaire)</li>
+                    <li>Visual Basic (Intermédiaire)</li>
+                    <li>Assembleur (Débutant)</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-1"> </div>
+        </div>
+
+        <div class="row marge-left">
+            <div class="col-md-1"> </div>
+            <div class="col-md-5">
+                <h3 class = "font-weight-bold">Base de donnée</h3>
+                <ul>
+
+                    <li>SQL (Avancée)</li>
+                    <li>PL/SQL (Avancée)</li>
+                    <li>MySQL (Avancée)</li>
+
+                </ul>
+            </div>
+            <div class="col-md-5">
+           
+            </div>
+            <div class="col-md-1"> </div>
+        </div>
+
 
     </div>
 
+    <br>
+
+    <div id="Humaines">
+        <div class="row marge-left">
+            <h1 class="Helvt">COMPÉTENCES HUMAINES</h1>
+        </div>
+        <div class="BottomBlueLigne marge-left marge-bot"></div>
+        <div class="row marge-left align-items-center">
+            <div class="col-md-1"> </div>
+            <div class="col-md-10"> 
+               
+                <h3 class = "font-weight-bold">Langages:</h3>
+                <ul>
+                    <li>Français (Langue Maternelle)</li>
+                    <li>Anglais (Courant, TOEIC : 960)</li>
+                    <li>Espagnol (Débutant)</li>
+                </ul>
+            
+
+                <h3 class = "font-weight-bold">Soft-Skills</h3>
+                <ul>
+                    <li>Flexible</li>
+                    <li>Sens de l'organisation</li>
+                    <li>Rigoureux</li>
+                </ul>
+
+                    
+    
+
+
+            </div>
+            <div class="col-md-1"> </div>
+        </div>
+    </div>
 
 
 
