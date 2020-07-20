@@ -90,12 +90,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-              
             ],
             "styles": [
               "src/styles.sass"
-            
-              
             ],
             "scripts": []
           }
@@ -124,8 +121,13 @@
               "devServerTarget": "ProjetLaurent:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ProjetLaurent"
 }

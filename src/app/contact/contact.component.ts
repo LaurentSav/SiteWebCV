@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faFacebook, faGithub} from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -9,6 +9,7 @@ export class ContactComponent implements OnInit {
   faLinkedin = faLinkedin;
   faTwitter = faTwitter;
   faFacebook = faFacebook;
+  faGithub = faGithub;
   constructor() { }
 
   ngOnInit(): void {
